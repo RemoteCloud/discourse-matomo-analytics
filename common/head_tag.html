@@ -29,12 +29,12 @@
 
     if (settings.subdomain_tracking) {
       const allDomains = "*" + document.domain.substring(document.domain.indexOf("."));
-      _paq.push(["setCookieDomain", allDomains]);
       _paq.push(["setDomains", allDomains]);
     }
 
     _paq.push(["setCustomUrl", url]);
     _paq.push(["setDocumentTitle", title]);
+    _paq.push(["disableCookies"]);
     _paq.push(["trackPageView"]);
     _paq.push(['enableLinkTracking']);
   });
