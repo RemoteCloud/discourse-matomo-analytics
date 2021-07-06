@@ -33,7 +33,7 @@
     }
 
     _paq.push(["setCustomUrl", url]);
-    _paq.push(["setDocumentTitle", title]);
+    _paq.push(["setDocumentTitle", document.domain + "/" + title]);
     _paq.push(["disableCookies"]);
     _paq.push(["trackPageView"]);
     _paq.push(['enableLinkTracking']);
